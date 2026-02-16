@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cauchqthn8n6g"
+path="res://.godot/imported/efigs.fnt-c39d9456f3ee44a5bfc73080f181fb80.fontdata"
+
+[deps]
+
+source_file="res://addons/openxr/thirdparty/oculus_mobile_sdk/SampleCommon/res/raw/efigs.fnt"
+dest_files=["res://.godot/imported/efigs.fnt-c39d9456f3ee44a5bfc73080f181fb80.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2
