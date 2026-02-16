@@ -1,0 +1,14 @@
+android-sdk/jdk/lib/modules filter=lfs diff=lfs merge=lfs -text
+. filter=lfs diff=lfs merge=lfs -text
+android-sdk filter=lfs diff=lfs merge=lfs -text
+android-sdk/jdk/lib/module filter=lfs diff=lfs merge=lfs -text
+android-sdk/jdk_depr/lib/module filter=lfs diff=lfs merge=lfs -text
+android-sdk/jdk_depr/lib/modules filter=lfs diff=lfs merge=lfs -text
+build-tools/jdk/lib/modules filter=lfs diff=lfs merge=lfs -text
+build-tools/android-sdk/jdk/lib/modules filter=lfs diff=lfs merge=lfs -text
+build-tools/android-sdk/jdk/new/lib/modules filter=lfs diff=lfs merge=lfs -text
+build-tools/android-sdk/jdk/old/lib/modules filter=lfs diff=lfs merge=lfs -text
+build-tools/android-sdk/jdk/old/lib/module filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.apk filter=lfs diff=lfs merge=lfs -text

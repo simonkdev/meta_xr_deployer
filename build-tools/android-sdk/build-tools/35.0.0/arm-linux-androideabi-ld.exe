@@ -1,5 +1,3 @@
-This dummy file substitutes for an old linker that used to be at its location.
-The presence of this file ensures that old versions of AGP continue to trust build tools integrity
-(which they would not if the file were removed).
-Old versions of AGP will not be able to do compatibility mode RenderScript builds,
-but everything else should work.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c7847596d256c5baeb406d3dcdd70e50e45c059b81b01cb6b673369099d47d2
+size 343
