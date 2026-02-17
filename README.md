@@ -50,14 +50,19 @@ Choose the XR project you wish to build and deploy from the dropdown list.
     *   Click on the dropdown menu labeled "Select Source Folder" and choose your project.
     *   ![Placeholder for 'Select Source Folder' dropdown](images/select_source_folder_dropdown.png)
 
-### Step 3: Generated Paths
+### Step 3: Add SDK paths to godot project
 
-This section displays the automatically generated paths for the Android SDK and Java SDK, which are crucial for the build process. You can copy these paths to your clipboard if needed.
+Launch the provided godot-x.y.exe file, import your project and open the editor settings. Search for 'SDK' under the section 'export/android' and paste the automatically generated paths into their correspondig fields.
 
-1.  **Copy Paths (Optional)**:
+1.  **Copy Paths**:
     *   Click "Copy Path SDK" to copy the Android SDK path.
     *   Click "Copy Path JDK" to copy the Java SDK path.
     *   ![Placeholder for 'Generated Paths' section](images/generated_paths.png)
+  
+2.  **Open Godot editor settings in the imported project**:
+    *   Go to the 'editor' drop-down menu and select 'Editor Settings'
+    *   Click in the search field and type 'SDK'
+    *   Open the 'Android' tab on the left and paste the links into place.
 
 ### Step 4: Execute Script
 
@@ -67,9 +72,3 @@ This is the final step to build and deploy your selected XR project.
     *   Click the "RUN" button to execute the `build_and_deploy.bat` script for the selected project.
     *   The status log will show the build and deployment progress.
     *   ![Placeholder for 'RUN' button](images/run_button.png)
-
-## 4. Status Log
-
-The text area at the bottom of the GUI displays real-time status updates and output from the executed commands. Monitor this area for progress, errors, and important messages.
-
-![Placeholder for 'Status Log' area](images/status_log.png)
