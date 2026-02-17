@@ -12,7 +12,7 @@ Before using the Meta XR Deployer, ensure you have the following:
 *   **Source Projects**: Your XR projects should be located in the `projects` directory relative to the deployer tool.
 *   **Templates**: Export templates should be available in the `templates` directory relative to the deployer tool.
 
-## 3. Using the Meta XR Deployer GUI
+## 3. Usage
 
 Follow these steps to use the Meta XR Deployer:
 
