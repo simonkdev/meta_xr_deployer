@@ -1,10 +1,6 @@
-# Meta XR Deployer: User Guide
-
-This guide provides step-by-step instructions on how to use the Meta XR Deployer tool to build and deploy your XR projects.
-
 ## 1. Overview
 
-The Meta XR Deployer is a graphical user interface (GUI) tool designed to streamline the process of building and deploying Meta XR projects. It automates several common tasks, including copying source files, managing ADB (Android Debug Bridge) connections, setting up environment paths, and executing build and deployment scripts.
+This project features a graphical user interface (GUI) tool designed to streamline the process of building and deploying Meta XR projects. It automates several common tasks, including copying source files, managing ADB (Android Debug Bridge) connections, setting up environment paths, and executing build and deployment scripts.
 
 ## 2. Prerequisites
 
