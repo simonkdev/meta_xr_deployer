@@ -1,0 +1,75 @@
+## 1. Overview
+
+This project features a graphical user interface (GUI) tool designed to streamline the process of building and deploying Meta XR projects. It automates several common tasks, including copying source files, managing ADB (Android Debug Bridge) connections, setting up environment paths, and executing build and deployment scripts.
+
+## 2. Prerequisites
+
+Before using the Meta XR Deployer, ensure you have the following:
+
+*   **Godot Engine 4.x**: The `godot-4.5.exe` executable should be present in the same directory as the deployer tool.
+*   **Android SDK**: The Android SDK build tools and platform tools should be located in the `android-sdk` directory relative to the deployer tool.
+*   **Java Development Kit (JDK)**: A JDK installation should be present in the `android-sdk/jdk` directory relative to the deployer tool.
+*   **Source Projects**: Your XR projects should be located in the `projects` directory relative to the deployer tool.
+*   **Templates**: Export templates should be available in the `templates` directory relative to the deployer tool.
+
+## 3. Usage
+
+Follow these steps to use the Meta XR Deployer:
+
+### Step 0: Copy Source Files
+
+This step uses `robocopy` to copy necessary source files to the current working directory. By default, it copies from `H:\godot-b-a-v0`. You can specify a custom source path if needed.
+
+1.  **Enable custom robocopy path (Optional)**:
+    *   Check the box next to "Enable custom robocopy path" if you want to specify a different source directory for `robocopy`
+
+2.  **Enter Custom Robocopy Path (Optional)**:
+    *   If the custom path is enabled, an input field will appear. Enter the desired source path here.
+    *   ![Placeholder for 'Custom Robocopy Path' input field](images/step0.webp)
+
+3.  **Run Robocopy**:
+    *   Click the "Run Robocopy" button to initiate the file copying process.
+    *   The status log at the bottom will display the progress.
+    *   ![Placeholder for 'Run Robocopy' button](images/step0-2.webp)
+
+### Step 1: Restart ADB Server
+
+This step stops and restarts the ADB server and lists devices to ensure a fresh connection and prompt for device authorization.
+
+1.  **Restart ADB**:
+    *   Click the "Restart ADB" button.
+    *   Monitor the status log for ADB server messages and check your device for any authorization prompts.
+    *   ![Placeholder for 'Restart ADB' button](images/step1.webp)
+
+### Step 2: Select Source Folder
+
+Choose the XR project you wish to build and deploy from the dropdown list.
+
+1.  **Select Project**:
+    *   Click on the dropdown menu labeled "Select Source Folder" and choose your project.
+    *   ![Placeholder for 'Select Source Folder' dropdown](images/step2.webp)
+
+### Step 3: Add SDK paths to godot project
+
+Launch the provided godot-x.y.exe file, import your project and open the editor settings. Search for 'SDK' under the section 'export/android' and paste the automatically generated paths into their correspondig fields.
+
+1.  **Copy Paths**:
+    *   Click "Copy Path SDK" to copy the Android SDK path.
+    *   Click "Copy Path JDK" to copy the Java SDK path.
+    *   ![Placeholder for 'Generated Paths' section](images/step3.webp)
+  
+2.  **Open Godot editor settings in the imported project**:
+    *   Go to the 'editor' drop-down menu and select 'Editor Settings'
+    *   Click in the search field and type 'SDK'
+    *   Open the 'Android' tab on the left and paste the links into place.
+    *   ![Placeholder for 'Generated Paths' section](images/step3-2.webp)
+    *   ![Placeholder for 'Generated Paths' section](images/step3-3.webp)
+    *   ![Placeholder for 'Generated Paths' section](images/step3-4.webp)
+
+### Step 4: Execute Script
+
+This is the final step to build and deploy your selected XR project.
+
+1.  **Run Deployment**:
+    *   Click the "RUN" button to execute the `build_and_deploy.bat` script for the selected project.
+    *   The status log will show the build and deployment progress.
